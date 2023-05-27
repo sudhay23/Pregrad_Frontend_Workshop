@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+}
+
+.wood-bg {
+	background-image: url("assets/bg.jpeg");
+	min-height: 100vh;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	left: 0;
+
+	/* Add the blur effect */
+	filter: blur(7px);
+	-webkit-filter: blur(7px);
+
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.content {
+	padding: 50px 80px;
+	display: grid;
+	min-height: 100%;
+	position: absolute;
+	width: 100%;
+	grid-template-columns: 1fr 1fr;
+}
+
+.section-one {
+	display: flex;
+	align-items: center; /* y-axis */
+	justify-content: center; /* x-axis */
+}
+
+.greet-form {
+	font-size: 18px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+}
+
+.heading-ribbon {
+	min-height: 30px;
+	background-color: rgb(211, 99, 99);
+	border-radius: 20px 20px 0 0;
+}
+
+.input-field {
+	padding: 20px 20px;
+	align-self: center;
+	width: 360px;
+}
+
+.input-field h5 {
+	font-weight: 400;
+}
+
+.input-box {
+	padding: 5px;
+	min-width: 320px;
+}
+
+.submit-btn {
+	transition: 0.25s;
+	width: 80%;
+	align-self: center;
+	padding: 6px 0;
+	background: none;
+	border: 2px solid orange;
+}
+
+.submit-btn:hover {
+	transition: 0.25s;
+	background-color: orange;
+	cursor: pointer;
+	color: white;
+}
+
+/* Greeting Cards */
+.section-two {
+	padding: 40px;
+}
+
+.section-two h2 {
+	color: white;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#greet-responses {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-height: 70vh;
+	overflow-y: auto;
+}
+
+.card {
+	background-color: rgba(44, 50, 63, 0.887);
+	padding: 20px;
+	display: flex;
+	border-radius: 10px;
+	justify-content: center;
+	gap: 2px;
+	flex-direction: column;
+}
+
+.card .greet-name {
+	color: rgb(2, 191, 2);
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+
+.card .greet-message {
+	color: rgb(255, 204, 159);
+	margin-bottom: 10px;
+	font-weight: 500;
+	max-width: 70%;
+	text-align: center;
+	line-height: 1.5;
+}
