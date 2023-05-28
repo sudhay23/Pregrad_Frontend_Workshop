@@ -94,6 +94,22 @@
 	color: white;
 }
 
+.clear-btn {
+	transition: 0.25s all;
+	width: 80%;
+	align-self: center;
+	padding: 6px 0;
+	background: none;
+	border: 2px solid red;
+}
+
+.clear-btn:hover {
+	transition: 0.25s all;
+	background: red;
+	cursor: pointer;
+	color: white;
+}
+
 /* Greetings Cards */
 
 .section-two {
